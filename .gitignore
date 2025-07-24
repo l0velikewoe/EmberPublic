@@ -1,0 +1,22 @@
+# Public Repository Gitignore
+# This file ensures only configuration files are tracked
+
+# Exclude everything by default
+*
+
+# Only include config folder and README
+!config/
+!config/**
+!README.md
+!.gitignore
+
+# Exclude any sensitive files that might accidentally be in config
+config/*.key
+config/*.secret
+config/*.env
+config/private_*
+config/sensitive_*
+
+# Exclude system files
+.DS_Store
+Thumbs.db 
